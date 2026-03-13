@@ -1,49 +1,98 @@
-<html>
+<!DOCTYPE html>
+<html lang="tr">
 <head>
-<title>AHSAPP</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="content-type" content="text/html; charset=windows-4512">
-<meta name="generator" content="AHSAPP">
-<link rel="stylesheet" type="text/css" href="default.css" />
-<style type="text/css">
-a.style1:link{color:#FFFFFF;text-decoration: none;}
-a.style1:visited{color:#FFFFFF;text-decoration: none;}
-a.style1:hover{color:#FFFFFF;text-decoration: none;}
-a.style1:active{color:#FFFFFF;text-decoration: none;}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHSAPP - Modern</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Temel Ayarlar */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Ubuntu', sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); /* Modern Gradyan Arka Plan */
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
 
-<style type="text/css">
-div#container
-{
-	position:relative;
-	width: 1005px;
-	margin-top: 0px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align:left; 
-}
-body {text-align:center;margin:0}
-</style>
+        /* Ana Konteynır */
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px); /* Modern cam efekti */
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            border: 1px border rgba(255, 255, 255, 0.18);
+            max-width: 500px;
+            width: 90%;
+        }
 
+        /* Logo Ayarı */
+        .logo img {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        /* Google Play Butonu */
+        .badge img {
+            max-width: 220px;
+            transition: transform 0.3s ease;
+        }
+
+        .badge img:hover {
+            transform: scale(1.05); /* Hover efekti */
+        }
+
+        /* Yazı Stilleri */
+        .tagline {
+            font-size: 1.2rem;
+            margin: 20px 0;
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        .footer {
+            font-size: 0.8rem;
+            margin-top: 30px;
+            opacity: 0.6;
+        }
+
+        .play-text {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #00f2fe;
+        }
+    </style>
 </head>
-<body background="images/grid-3230205_1920.jpg">
-<div id="container">
-<div id="image1" style="position:absolute; overflow:hidden; left:209px; top:97px; width:285px; height:95px; z-index:0"><img src="images/g4591.png" alt="" title="" border=0 width=285 height=95></div>
+<body>
 
-<div id="image2" style="position:absolute; overflow:hidden; left:504px; top:88px; width:292px; height:113px; z-index:2"><a href="https://play.google.com/store/apps/dev?id=7606923165540402077"><img src="images/google-play-badge (1).png" alt="" title="" border=0 width=292 height=113></a></div>
+    <div class="container">
+        <div class="logo">
+            <img src="./AHSAPP_files/g4591.png" alt="AHSAPP Logo">
+        </div>
 
-<div id="text1" style="position:absolute; overflow:hidden; left:548px; top:187px; width:208px; height:24px; z-index:2">
-<div class="wpmd">
-<div><font face="Ubuntu" class="ws11">Google Play' de görüntüleyin</font></div>
-</div></div>
+        <div class="tagline">
+            "Various games and applications for you"
+        </div>
 
-<div id="text2" style="position:absolute; overflow:hidden; left:425px; top:360px; width:167px; height:44px; z-index:3">
-<div class="wpmd">
-<div align=center><font face="Ubuntu" class="ws11">"Various games and applications for you"</font></div>
-<div align=center><font face="Ubuntu" class="ws11">2019 - AHSAPP</font></div>
-</div></div>
+        <div class="download-section">
+            <span class="play-text">Google Play'de görüntüleyin</span>
+            <a href="https://play.google.com/store/apps/dev?id=7606923165540402077" target="_blank" class="badge">
+                <img src="./AHSAPP_files/google-play-badge (1).png" alt="Google Play Store">
+            </a>
+        </div>
 
-</div>
+        <div class="footer">
+            2019 - 2026 AHSAPP
+        </div>
+    </div>
 
 </body>
 </html>
